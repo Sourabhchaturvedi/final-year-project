@@ -1,0 +1,49 @@
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+            .bodyf {
+                height: 100%;
+                width: 100%;
+                background: #6ed3cf;
+            }
+            
+            .box {
+                box-shadow: 5px 4px 43px #000;
+                background: rgba(0, 0, 0, .2);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 450px;
+                height: 600px;
+                margin-top: -300px;
+                margin-left: -200px;
+                border-radius: 2px;
+                background: -webkit-linear-gradient(bottom left, #5e0231 20%, #1E392A 50%);
+                background: -moz-linear-gradient(bottom left, #5e0231 20%, #1E392A 50%);
+                background: -o-linear-gradient(bottom left, #5e0231 30%, #1E392A 50%);
+                background: linear-gradient(to top right, #5e0231 20%, #1E392A 50%);
+                filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5e0231', endColorstr=' #1E392A', GradientType=1);
+                color: #16174f;
+                font-weight: bolder;
+            }
+            
+            .imgc {
+                height: 200px;
+                width: 200px;
+                margin-top: 20px;
+            }
+            
+            .button1 {
+                cursor: pointer;
+                background-color: #f2cbbc;
+                color: #16174f;
+                font-weight: bold;
+                border-radius: 40px;
+            }
+            
+            input {
+                width: 80%;
+                padding: 10px;
+                margin-top: 10%;
+                background: #fff;
+                border: none;
+                border-bottom: 1px solid #
+            }
