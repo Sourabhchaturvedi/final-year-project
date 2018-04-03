@@ -56,7 +56,7 @@ PreparedStatement ps;
                 else if(uvalid)
                 {
                     %>
-                    <jsp:forward page="inbox.html"/>
+                    <jsp:forward page="studentinbox.html"/>
                     <%
                 }
 
