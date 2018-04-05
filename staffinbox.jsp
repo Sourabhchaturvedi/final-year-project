@@ -1,3 +1,15 @@
+
+<%
+    String Username=(String)(session.getAttribute("username"));
+    if(Username==null)
+    {
+        response.sendRedirect("index.html");
+    }
+    else
+    {
+%>
+
+
 <html>
 
 <head>
@@ -14,7 +26,10 @@
 <div class="container1">
     <div class="containerh">
         <img src="Student.png" class="imgc" style="float:left">
-        <h1>Student Management System </h1>
+     <p>   <h1>Student Management System </h1></p>
+
+       <p><h2>hello<%= Username%> Welcome  to your Inbox</h2>
+        </p>
     </div>
 
 
@@ -24,7 +39,7 @@
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
-            <li class="logo"><a href="index.html">Logout</a></li>
+            <li class="logo"><a href="LogOut.jsp">Logout</a></li>
         </ul>
     </div>
 
@@ -50,3 +65,6 @@
 </div>
 
 </html>
+<%
+    }
+%>

@@ -99,7 +99,6 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">ADMIN</a></li>
                     <li><a href="#">STUDENT</a></li>
                     <li><a href="#">STAFF</a></li>
                 </ul>
@@ -117,22 +116,6 @@
     <div class="container-fluid bg-2 text-center">
         <h3 class="margin">ABOUT STUDENT MANAGEMENT SYSTEM</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    </div>
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-        <h3 class="margin">HELLO USER SELECT ONE</h3><br>
-        <div class="row">
-
-            <div class="col-sm-5">
-                <h1> ADD OR REMOVE STUDENT </h1>
-                <a href="newuser.html"> <img src="studentL.png" class="img-responsive imgr margin" style="width:60%" alt="Image"></a>
-            </div>
-            <div class="col-sm-5">
-                <h1> ADD OR REMOVE STAFF </h1>
-                <a href="newuser.html"><img src="staff.png" class="img-responsive imgr1 margin" style=" width:60%" alt="Image"></a>
-            </div>
-        </div>
     </div>
 
     <!-- Footer -->
