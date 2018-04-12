@@ -1,0 +1,49 @@
+<table style="display:block;">
+  <tr>
+    <th>S.NO</th>
+    <th>USER ID</th>
+    <th>PASSWORD</th>
+    <th>USERTYPE</th>
+    <th>NAME</th>
+	<th>ADDRESS</th>
+	<th>PHONE</th>
+	
+  </tr>
+  
+  
+  <%
+  try
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		con=DriverManager.getConnection("jdbc:mysql:///RMsuperstore","root","root");
+		ps=con.prepareStatement("select * from usertable");
+		rs=ps.executeQuery();
+		int count=1;
+		while(rs.next())
+		{
+			
+	%>		
+  <tr>
+    <td><%=count%></td>
+    <td><%=rs.getString("username")%></td>
+    <td><%=rs.getString("password")%></td>
+	<td><%=rs.getString("usertype")%></td>
+	<td><%=rs.getString("name")%></td>
+	<td><%=rs.getString("address")%></td>
+	<td><%=rs.getInt("phone")%></td>
+  </tr>
+  
+ 
+	<%		
+			
+		count++;	
+		}
+			con.close();	
+	}
+		catch(Exception e)
+		{
+			out.print(e);
+		}
+				%>
+ 
+  </table>

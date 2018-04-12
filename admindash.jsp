@@ -1,3 +1,14 @@
+
+<%
+    String Username=(String)(session.getAttribute("username"));
+    if(Username==null)
+    {
+        response.sendRedirect("index.html");
+    }
+    else
+    {
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        body {
+        body { 
             font: 20px Montserrat, sans-serif;
             line-height: 1.8;
             color: #f5f6f7;
@@ -24,16 +35,7 @@
         .margin {
             margin-bottom: 45px;
         }
-        
-        .imgr {
-            border-radius: 40px;
-            float: left;
-        }
-        
-        .imgr1 {
-            border-radius: 40px;
-            float: right;
-        }
+    
         
         .we {
             font-weight: bold;
@@ -101,6 +103,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">STUDENT</a></li>
                     <li><a href="#">STAFF</a></li>
+                      <li ><a href="LogOut.jsp">LOGOUT</a></li>
                 </ul>
             </div>
         </div>
@@ -128,3 +131,6 @@
 </body>
 
 </html>
+    <%
+    }
+    %>

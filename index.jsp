@@ -49,7 +49,7 @@ PreparedStatement ps;
                 if(advalid)
                 {
                      
-                  response.sendRedirect("admindash.jsp"); 
+                  response.sendRedirect("adminc.jsp"); 
 
                 }
                 else if(uvalid)

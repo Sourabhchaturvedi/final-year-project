@@ -1,0 +1,74 @@
+.containerm {
+    height: 100%;
+    width: 100%;
+    color: fuchsia;
+}
+
+.containerh {
+    height: 26%;
+    width: 100%;
+    background: hsl(187, 71%, 59%);
+    padding-top: 40px;
+    padding-left: 300px;
+    color: white;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+
+.containerr {
+    height: 100%;
+    width: 26%;
+    background: #00ff80;
+    margin-top: 0%;
+    float: left;
+}
+
+.containerl {
+    height: 100%;
+    width: 74%;
+    background: whitesmoke;
+    float: left;
+}
+
+.but {
+    float: right;
+    margin-top: -90px;
+    margin-right: 2%;
+    background: yellow;
+    color: blueviolet;
+}
+
+.but1 {
+    margin-top: 28px;
+    margin-left: 100px;
+    background: blueviolet;
+}
+
+table {
+    margin: 200px;
+    display: none;
+    border: 15px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th {
+    color: white;
+    background-color: #3498db;
+    padding: 8px;
+    border: 1px solid white;
+    width: 60%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+tbody tr {
+    background-image: url(noise.png);
+}

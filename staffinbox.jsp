@@ -25,10 +25,9 @@
 
 <div class="container1">
     <div class="containerh">
-        <img src="Student.png" class="imgc" style="float:left">
-     <p>   <h1>Student Management System </h1></p>
-
-       <p><h2>hello<%= Username%> Welcome  to your Inbox</h2>
+        <img src="Staff.png" class="imgc" style="float:left">
+       <h1>Student Management System </h1></p>
+       <h2>hello<%= Username%> Welcome  to your Inbox</h2>
         </p>
     </div>
 

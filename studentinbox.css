@@ -17,8 +17,8 @@
      
      .containerr {
          height: 60%;
-         width: 100%;
-         background: pink;
+         width: 70%;
+         background: white;
          color: green;
      }
      
@@ -77,4 +77,43 @@
      
      .logo {
          float: right;
+         color: white;
+     }
+     
+     .tex {
+         float: left;
+         color: white;
+     }
+     
+     table {
+         display: none;
+         margin-bottom: 10px;
+         margin-left: 30px;
+         border: 5px;
+         outline: none;
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 60%;
+     }
+     
+     td {
+         border: 1px solid white;
+         text-align: left;
+         padding: 8px;
+         width: 50%;
+     }
+     
+     tr:nth-child(even) {
+         background-color: #85929e;
+     }
+     
+     th {
+         color: white;
+         background-color: #3498db;
+         padding: 8px;
+         border: 1px solid white;
+     }
+     
+     tr:nth-child(odd) {
+         background-color: #d0d3d4;
      }
