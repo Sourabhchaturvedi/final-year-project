@@ -16,6 +16,7 @@ PreparedStatement ps;
     %>
 
             <html lang="en">
+
             <head>
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,29 +83,26 @@ PreparedStatement ps;
 
                     <div class="containerl">
 
-                         <div id="dash" style"display:none">
-                         <button type="button" class="btn btn-info btn-lg but1" data-toggle="modal" data-target="#myModal1">RECEIVE SALLARY</button>
-                            <button type="button" class="btn btn-info btn-lg but1" data-toggle="modal" data-target="#myModaledic">RECEIVE ATTENDENCE</button>
-                            <button type="button" class="btn btn-info btn-lg but1" data-toggle="modal" data-target="#myModaldelc">RECEIVE NOTIFICATION</button>
-                         </div>
+                        <div id="dash" style "display:none">
+                        </div>
 
                         <div id="regs" style="display:none ">
                             <button type="button" class="btn btn-info btn-lg but1" data-toggle="modal" data-target="#myModal1">ADD STUDENT</button>
                             <button type="button" class="btn btn-info btn-lg but1" data-toggle="modal" data-target="#myModaledic">EDIT STUDENT</button>
                             <button type="button" class="btn btn-info btn-lg but1" data-toggle="modal" data-target="#myModaldelc">DELETE</button>
-                             <div>
-                               <table>
-                                <th>name</th>
-                                <th>fname</th>
-                                <th>mname</th>
-                                <th>contact</th>
-                                <th>email</th>
-                                <th>gender</th>
-                                <th>dob</th>
-                                <th>course</th>
-                                 
-                            
-                      <%
+                            <div>
+                                <table>
+                                    <th>name</th>
+                                    <th>fname</th>
+                                    <th>mname</th>
+                                    <th>contact</th>
+                                    <th>email</th>
+                                    <th>gender</th>
+                                    <th>dob</th>
+                                    <th>course</th>
+
+
+                                    <%
                                           try
                                   {
                                    Class.forName("com.mysql.jdbc.Driver");
@@ -115,36 +113,36 @@ PreparedStatement ps;
                                       {
                         %>
 
-                            <tr>
-                                <td>
-                                    <%=rs.getString(1)%>
-                                </td>
-                                <td>
-                                    <%=rs.getString(2)%>
-                                </td>
-                                <td>
-                                    <%=rs.getString(3)%>
-                                </td>
-                                <td>
-                                    <%=rs.getString(4)%>
-                                </td>
-                                <td>
-                                    <%=rs.getString(5)%>
-                                </td>
+                                        <tr>
+                                            <td>
+                                                <%=rs.getString(1)%>
+                                            </td>
+                                            <td>
+                                                <%=rs.getString(2)%>
+                                            </td>
+                                            <td>
+                                                <%=rs.getString(3)%>
+                                            </td>
+                                            <td>
+                                                <%=rs.getString(4)%>
+                                            </td>
+                                            <td>
+                                                <%=rs.getString(5)%>
+                                            </td>
 
-                                  <td>
-                                    <%=rs.getString(6)%>
-                                </td>
-                                  
-                                   <td>
-                                    <%=rs.getString(7)%>
-                                </td>
-                                 <td>
-                                    <%=rs.getString(8)%>
-                                </td>
-                                
-                            </tr>
-                            <%			
+                                            <td>
+                                                <%=rs.getString(6)%>
+                                            </td>
+
+                                            <td>
+                                                <%=rs.getString(7)%>
+                                            </td>
+                                            <td>
+                                                <%=rs.getString(8)%>
+                                            </td>
+
+                                        </tr>
+                                        <%			
                                   
                                       }
                                           	
@@ -158,9 +156,11 @@ PreparedStatement ps;
                                           con.close();
                                       }
                                
-                      %>          
-                  </table>
-                  </div> 
+                   %>
+                                </table>
+                            </div>
+
+
 
                             <div class="container">
                                 <!-- Trigger the modal with a button -->
@@ -213,7 +213,7 @@ PreparedStatement ps;
                                                         <input type="text" placeholder="Enter email" name="email"><br><br>
                                                         <input type="text" placeholder="Enter contact" name="contact"><br><br>
                                                         <input type="text" placeholder="Enter father's name" name="fname"><br><br>
-                                                         <input type="text" placeholder="Enter mother's name" name="mname"><br><br>
+                                                        <input type="text" placeholder="Enter mother's name" name="mname"><br><br>
                                                         <input type="submit">
                                                     </center>
                                                 </form>
@@ -272,7 +272,7 @@ PreparedStatement ps;
                 w = document.getElementById('atten');
 
 
-                function mydash() {
+                function myfun() {
                     if (x.style.display === 'none') {
                         x.style.display = 'block';
                     } else {
@@ -295,7 +295,8 @@ PreparedStatement ps;
                         z.style.display = 'none';
                     }
                 }
-                 function mymark() {
+
+                function mymark() {
                     if (w.style.display == 'none') {
                         w.style.display = 'block';
                     } else {

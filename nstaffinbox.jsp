@@ -71,18 +71,16 @@ PreparedStatement ps;
 
                         </div>
                         <button type="button" class="btn btn-info btn-lg but">
+                                <span id="userName"><%=(String)session.getAttribute("name")%></span>
                 <a href="LogOut.jsp">Logout</a>
                 </button>
 
                     </div>
 
                     <div class="containerr">
-                        <button type="button" class="btn btn-info btn-lg but1" onclick="mydash()">SEE ATTENDENCE</button>
-                        <button type="button" class="btn btn-info btn-lg but1" onclick="myfun()">SEE FEES STATUS</button>
-                        <button type="button" class="btn btn-info btn-lg but1" onclick="mysal()">SEE MARKS</button>
-                        <button type="button" class="btn btn-info btn-lg but1" onclick="mysal()">RECEIVE NOTIFICATION</button>
-
-
+                        <button type="button" class="btn btn-info btn-lg but1" onclick="mydash()">FEES SUMBIT</button>
+                        <button type="button" class="btn btn-info btn-lg but1" onclick="myfun()">ATTENDANCE TEACHER</button>
+                        <button type="button" class="btn btn-info btn-lg but1" onclick="mysal()">LIBRARY</button>
 
 
 
